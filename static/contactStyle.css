@@ -1,0 +1,46 @@
+/* 
+color pallate
+
+dark blue - #2b2e4a
+redish - #e84545
+light brown - #903749
+brownish - #53354a 
+orange - ##EA6C35
+
+*/
+
+body {
+    background: #903749; 
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    position: absolute;
+    opacity: 0.8;
+    content: "";
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.myForm {
+    background: #2b2e4a;
+    opacity: 0.8;
+    margin: 20px auto;
+    padding: 32px 19px;
+    width: 70%;
+}
+.btn {
+    background: #d8623a;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+}
+form > div {
+    padding: 5px;
+}
+.form-check-input:checked[type=radio] {
+    background-color: #be5341;
+}

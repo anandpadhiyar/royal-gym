@@ -1,0 +1,105 @@
+extends base.pug
+block style 
+    link(rel="stylesheet", href="../static/aboutStyle.css")
+block content 
+    section.myCarousel 
+        <div id="demo-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#demo-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#demo-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../static/images/dumbellRack.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Different weights</h5>
+                        <p>We are fully equipped with all types of weights which will help you maintain better form and target all body parts</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/images/cardio.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cardio machines</h5>
+                        <p>Cardio is very important in maintaining stamina and building good physique. We are having enough machines so that no waiting period for trainees.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/images/pushups.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Body weight exercise </h5>
+                        <p>Body weight exercise which can build strength and stamina as well, we have seperate section for these exercise also.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo-carousel"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo-carousel"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    section.history.container 
+        h2 Our History 
+        p After invention of computer, we have registered great amount of growth but there are always cons to any great achievement. Due to computer our life mainly become sitting. 
+        p Year by year, we have reduced screen size of computer. Initially desktop - then laptop after that mobile phones has been invented and our life became more and more lazzy. We have found out that problem in 1995 and we have developed Royal's Gym for these. 
+        p This gym is not only giving you good physique but also this is helping you building overall stamina and you will be become stronger internally also. As technology changes -  we have also upgraded our technology. If we talk about today - we are spending average 6 hours seeing just mobile phones and laptops so according program in fitness must be design to overcome cons of that. We have trained many of sports players who are currently achieving big goals in their lives. 
+        p We have also tied up with many companies who are concious about their employees fitness - R A Multinational compnay is one of them. They are giving their employee best program in our gym.
+    section.branches 
+        .container
+            h2 Our Main Branches 
+            <div id="branch-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#branch-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#branch-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#branch-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        .first-slide
+                            .my-border1 
+                            .row 
+                                .col-md-4.img
+                                    img(src="../static/images/building1edited.svg", alt="image")
+                                .col-md-8.img-desc 
+                                    h3 New York Branch 
+                                    p Our Main branch 
+                                    p +1 8765896865
+                                    p Royal Street, New York.
+                            .my-border-2
+                    </div>
+                    <div class="carousel-item">
+                        .second-slide
+                            .my-border1 
+                            .row 
+                                .col-md-4.img
+                                    img(src="../static/images/building2edited.svg", alt="image")
+                                .col-md-8.img-desc 
+                                    h3 Mumbai Branch 
+                                    p Our Main branch in India 
+                                    p +91 8765766865
+                                    p Royal Street, New York.
+                            .my-border-2
+                    </div>
+                    <div class="carousel-item">
+                        .third-slide
+                            .my-border1 
+                            .row 
+                                .col-md-4.img
+                                    img(src="../static/images/building2edited.svg", alt="image")
+                                .col-md-8.img-desc 
+                                    h3 London Branch 
+                                    p Key Branch 
+                                    p +0 8765896565
+                                    p Royal Street, New York.
+                            .my-border-2
+                    </div>
+                </div>          
+            </div>
+    script(src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous")
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    script(src="../static/js/aboutScript.js") 

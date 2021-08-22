@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+SC:wght@300;500&display=swap");
+/* 
+color pallate
+
+dark blue - #2b2e4a
+redish - #e84545
+light brown - #903749
+brownish - #53354a 
+orange - ##EA6C35
+
+*/
+
+body {
+  color: white;
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 300;
+}
+.navbar {
+  background: #53354a;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 2px 12px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-weight: 300;
+}
+
+.line {
+  width: 40px;
+  height: 3px;
+  border: 2px solid white;
+  margin: 7px 0px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.active,
+.nav-item:hover {
+  background: white;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.active,
+.nav-item:hover > .nav-link {
+  color: #ea6c36;
+}
+
+.navbar-nav > .active > .nav-link {
+  color: #ea6c36;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: 1.8em;
+}
+
+.container {
+  text-align: center;
+  margin-top: 8px;
+}
+
+h1 {
+  font-size: 2.7em;
+  font-weight: 400;
+}
+h2 {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+footer {
+  background-color: #53354a;
+  padding: 2px 8px;
+}
+
+.footer-brand {
+  font-family: "Lobster", cursive;
+  color: white;
+  text-decoration: none;
+}
+.box {
+  display: inline-block;
+  margin: 6px;
+  padding: 5px 10px;
+  background-color: #ea6c35;
+  color: white;
+}
+hr {
+  border: 1px solid white;
+}

@@ -1,0 +1,169 @@
+extends base.pug
+block style 
+    link(rel="stylesheet", href="../static/indexStyle.css")
+block content 
+    section.myCarousel 
+        <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../static/images/dumbellRack.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fat loss program</h5>
+                        <p>Fat loss program using dumbelles and other weights.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/images/cardio.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cardio machines</h5>
+                        <p>Cardio can help in releasing stress and generating postivie hormones.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../static/images/pushups.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ultimate training</h5>
+                        <p>We are here providing you, ultimate training according to your body type.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home-carousel"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    .rg-test.container
+        h2 RG Test 
+        p As you have heard of term fitness, but you have never thought of these - what is real fitness?
+        p In Royal's gym - we are offering you real fitness, we have set up a fitness test for new joinee
+        p and from that we are calculating what is fitness level he or she are having and after that we are giving him RG number and according to his/her fitness goal we are providing you fitness schedule.
+        p This RG no is not only helping you in physicall workout, it is also helping you in knowing what is mental health you are having and how can you release stress and generate positive hormones from it.
+    <div class="parallax">
+
+    </div>
+    .services.container
+        h2 Workouts
+        .row 
+            .col-md-6.col-sm-12.col-lg-4 
+                <div class="card" style="width: 18rem;">
+                    <img src="../static/images/deadlift.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Strength Training</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link btn">Know more</a>
+                    </div>
+                </div>
+            .col-md-6.col-sm-12.col-lg-4 
+                <div class="card" style="width: 18rem;">
+                    <img src="../static/images/gymanisum.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Gymanissium Training</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link btn">Know more</a>
+                    </div>
+                </div>
+            .col-md-12.col-sm-12.col-lg-4 
+                <div class="card" style="width: 18rem;">
+                    <img src="../static/images/martial-art.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Martial Art</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link btn">Know more</a>
+                    </div>
+                </div>
+    .training
+        .container 
+            .row 
+                .col-md-4.col-sm-12
+                    .box-img 
+                        img(src="../static/images/cardio.jpg", alt="image")
+                .col-md-8.col-sm-12 
+                    .img-desc
+                        h2 Weight loss Training    
+                        p We are fully equipped with weight loss equipments which will help you reduce your weights, we are with best trainers who will help you with proper diet planning.
+        .container 
+            .row 
+                .col-md-8.col-sm-12 
+                    .img-desc 
+                        h2 Weight Resistance Training 
+                        p We are fully equiped with all types of weight - barbell, dumbell which can help you create more strenth. Our trainers are ISO certified and can help you with proper form and techniques.
+                .col-md-4.col-sm-12 
+                    .box-img 
+                        img(src="../static/images/pushups.jpg", alt="image")
+    .review
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active container  ">
+                    .my-border1 
+                    .row 
+                        .col-md-4 
+                            .box-img 
+                                img(src="../static/images/customer1edited.svg", alt="")
+                        .col-md-8 
+                            .img-desc
+                                p Reviews 
+                                br
+                                br
+                                h2 "This is best gym ever with fully equiped and trainers are also so good"
+                                br
+                                p.author-name  - R K Awasthi
+                    .my-border-2
+                </div>
+                <div class="carousel-item container  ">
+                    .my-border1 
+                    .row 
+                        .col-md-4 
+                            .box-img 
+                                img(src="../static/images/customer2edited.svg", alt="")
+                        .col-md-8 
+                            .img-desc
+                                p Reviews 
+                                br
+                                br
+                                h2 "Very spacious gym and very good management"
+                                br
+                                p.author-name  - Leena
+                    .my-border-2
+                </div>
+                <div class="carousel-item container  ">
+                    .my-border1 
+                    .row 
+                        .col-md-4 
+                            .box-img 
+                                img(src="../static/images/customer3edited.svg", alt="")
+                        .col-md-8 
+                            .img-desc
+                                p Reviews 
+                                br
+                                br
+                                h2 "Environment is really great for doing exercise. Motivation on its peak"
+                                br
+                                p.author-name  - Jenny
+                    .my-border-2
+                </div>          
+            </div>
+        </div>
+    script(src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous")
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

@@ -1,0 +1,99 @@
+/* 
+color pallate
+
+dark blue - #2b2e4a
+redish - #e84545
+light brown - #903749
+brownish - #53354a 
+orange - ##EA6C35
+
+*/
+
+body {
+    background: #903749;
+    font-weight: 300;
+}
+
+.d-block {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.myCarousel .carousel-item {
+    background: #903749;
+}
+
+.myCarousel .carousel-caption {
+    width: 40%;
+    margin: auto;
+}
+
+.history {
+    
+    margin-top: 25px;
+    padding: 10px;
+    position: relative;
+}
+.history::before {
+    background-color: #2b2e4a;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.history p {
+    text-align: justify;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.branches {
+
+    margin-top: 30px;
+    padding: 10px;
+}
+.branches .img-desc {
+    margin-top: 95px;
+}
+
+.branches img {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+.branches .carousel-inner {
+    background: #2b2e4a;
+}
+.branches .carousel-item {
+    background: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+.carousel-item.active {
+    opacity: 1;
+    display: block;
+}
+.row {
+    display: flex;
+}
+
+.my-border1 {
+    background: url('../static/images/border1.svg') no-repeat;
+    height: 26px;
+    max-width: 100%;
+}
+.my-border-2 {
+    background: url('../static/images/border2.svg') no-repeat;
+    height: 26px;
+}

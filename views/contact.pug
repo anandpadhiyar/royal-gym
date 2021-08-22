@@ -1,0 +1,26 @@
+extends base.pug
+block style 
+  link(rel="stylesheet", href="../static/contactStyle.css")
+block content
+  if success != ""
+    <div id='success-message' class="alert alert-success alert-dismissible fade show" role="alert">
+      strong Success - 
+      | #{success}
+      <button type="button" class="btn-close" onclick = 'closeAlert()'></button>
+    </div>
+  .container 
+    h2 Get 1 month membership free by filling this form
+    .myForm 
+      form(action= '/contact', method= 'POST')
+        .mb-3
+          input#exampleFormControlInput1.form-control(type='text' placeholder='Enter your name' name='name')
+        .mb-3
+          input#exampleFormControlInput1.form-control(type='mobile' placeholder='Enter your contact no' name='contact')
+        .mb-3
+          input#exampleFormControlInput1.form-control(type='number' placeholder='Enter your age' name='age')
+        .mb-3
+          textarea#exampleFormControlTextarea1.form-control(rows='3' placeholder='More about you' name = 'more')
+        .myButton
+          button.btn.btn-lg#submit(type= 'submit' onclick = 'removeSuccess') Submit
+    script(src="../static/js/contactScript.js") 
+
